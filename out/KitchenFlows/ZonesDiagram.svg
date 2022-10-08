@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="247px" preserveAspectRatio="none" style="width:495px;height:247px;" version="1.1" viewBox="0 0 495 247" width="495px" zoomAndPan="magnify"><defs><filter height="300%" id="f1kirrqv0bn0wl" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[ecdcd0f729bee1c0f4935b35a130c4fa]
+entity Acquiring--><rect fill="#FEFECE" filter="url(#f1kirrqv0bn0wl)" height="36.4883" style="stroke:#000000;stroke-width:1.5;" width="87" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="67" x="17" y="30.5352">Acquiring</text><!--MD5=[ea86353dc3f22cd611e722e42262821d]
+entity TransportationIn--><rect fill="#FEFECE" filter="url(#f1kirrqv0bn0wl)" height="36.4883" style="stroke:#000000;stroke-width:1.5;" width="136" x="129.5" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="139.5" y="30.5352">TransportationIn</text><!--MD5=[9d87300c3d68935b74f2cd2b4818507d]
+entity Delivery--><rect fill="#FEFECE" filter="url(#f1kirrqv0bn0wl)" height="36.4883" style="stroke:#000000;stroke-width:1.5;" width="74" x="300.5" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="310.5" y="30.5352">Delivery</text><!--MD5=[cf25d34b6f9695ab689953484c0b6ae1]
+entity Storage--><rect fill="#FEFECE" filter="url(#f1kirrqv0bn0wl)" height="36.4883" style="stroke:#000000;stroke-width:1.5;" width="73" x="410" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="420" y="30.5352">Storage</text><!--MD5=[df2132a7e11d9efc77cc4bdb36dfdebe]
+entity Prep--><rect fill="#FEFECE" filter="url(#f1kirrqv0bn0wl)" height="36.4883" style="stroke:#000000;stroke-width:1.5;" width="51" x="25" y="103"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="31" x="35" y="126.5352">Prep</text><!--MD5=[14472ca1708c5e99d6dded61c57e9796]
+entity Cook--><rect fill="#FEFECE" filter="url(#f1kirrqv0bn0wl)" height="36.4883" style="stroke:#000000;stroke-width:1.5;" width="56" x="111.5" y="103"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="36" x="121.5" y="126.5352">Cook</text><!--MD5=[3130ab30c724aa77de2202a24749b2a6]
+entity Clean--><rect fill="#FEFECE" filter="url(#f1kirrqv0bn0wl)" height="36.4883" style="stroke:#000000;stroke-width:1.5;" width="59" x="203" y="103"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="39" x="213" y="126.5352">Clean</text><!--MD5=[28f9d0a767286cb298212b5210cb2add]
+entity PuttingAway--><rect fill="#FEFECE" filter="url(#f1kirrqv0bn0wl)" height="36.4883" style="stroke:#000000;stroke-width:1.5;" width="105" x="297" y="103"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="307" y="126.5352">PuttingAway</text><!--MD5=[3c6543ae72d6124eb3700132e66c1e43]
+entity Disposal--><rect fill="#FEFECE" filter="url(#f1kirrqv0bn0wl)" height="36.4883" style="stroke:#000000;stroke-width:1.5;" width="78" x="11.5" y="199"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="21.5" y="222.5352">Disposal</text><!--MD5=[2cc7d5abb7f7d8a0192fbe405a348839]
+entity Segregation--><rect fill="#FEFECE" filter="url(#f1kirrqv0bn0wl)" height="36.4883" style="stroke:#000000;stroke-width:1.5;" width="103" x="125" y="199"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83" x="135" y="222.5352">Segregation</text><!--MD5=[cebca2dbe895273ffc326956ccb62bb7]
+entity TransportationOut--><rect fill="#FEFECE" filter="url(#f1kirrqv0bn0wl)" height="36.4883" style="stroke:#000000;stroke-width:1.5;" width="148" x="263.5" y="199"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="128" x="273.5" y="222.5352">TransportationOut</text><!--MD5=[6768a0fd4a135129db699b0035a3e6a7]
+link Acquiring to TransportationIn--><!--MD5=[56bcf48d0102aa294e68b1d7c91d3a10]
+link TransportationIn to Delivery--><!--MD5=[aa053f441f06c9a8b45659ec8d5c76b2]
+link Delivery to Storage--><!--MD5=[bff8795e661d8d6622583fee7f997952]
+link Acquiring to Prep--><!--MD5=[72086549c7d2ffad69e5ed655852c7af]
+link Prep to Cook--><!--MD5=[1044c0282274ead6e1ff546de1ba717d]
+link Cook to Clean--><!--MD5=[94bd70c7c848428a36dfa6a42f55337a]
+link Clean to PuttingAway--><!--MD5=[0683beabfffe41963f104e4070a7b874]
+link Prep to Disposal--><!--MD5=[e334f6594ab933e945456e80b7acd729]
+link Disposal to Segregation--><!--MD5=[c173d4432f322728ff16da8e4f5f685c]
+link Segregation to TransportationOut--><!--MD5=[ac9601f602c6a2d67551f1ffde809315]
+@startuml ZonesDiagram
+rectangle Acquiring
+rectangle TransportationIn
+rectangle Delivery
+rectangle Storage
+rectangle Prep
+rectangle Cook
+rectangle Clean
+rectangle PuttingAway
+rectangle Disposal
+rectangle Segregation
+rectangle TransportationOut
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 11:25:05 CET 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: GB
+--></g></svg>
