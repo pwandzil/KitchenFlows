@@ -89,3 +89,53 @@ rectangle TransportationOut
 ![](out/KitchenFlows/ZonesDiagram.svg)
 
 # Recipes
+
+
+<div hidden> 
+
+```
+@startuml Recipes1
+actor actor
+folder Warzywa.Obróbka {
+  folder Włoszczyzna {
+   card Marchewka
+   card Pietruszka
+   card SelerKorzeń
+  }
+}
+frame Zupa1 {
+file Rosół
+}
+frame Zupa2 {
+file Pomidorowa
+}
+frame Zupa3 {
+file Barszcz
+}
+frame Zupa4 {
+file Ogórkowa
+}
+
+Marchewka     -[dotted]do- Pietruszka
+Pietruszka    -[dotted]do- SelerKorzeń
+Marchewka     -ri-> Rosół : 3x
+Pietruszka    -ri-> Rosół : 3x
+SelerKorzeń   -ri-> Rosół : 3x
+
+Marchewka     -ri-> Pomidorowa : 3x
+Pietruszka    -ri-> Pomidorowa : 3x
+SelerKorzeń   -ri-> Pomidorowa : 3x
+
+Marchewka     -ri-> Barszcz : 3x
+Pietruszka    -ri-> Barszcz : 3x
+SelerKorzeń   -ri-> Barszcz : 3x
+
+Marchewka     -ri-> Ogórkowa : 3x
+Pietruszka    -ri-> Ogórkowa : 3x
+SelerKorzeń   -ri-> Ogórkowa : 3x
+@enduml
+```
+</div>
+
+
+![](out/KitchenFlows/Recipes1.svg)
