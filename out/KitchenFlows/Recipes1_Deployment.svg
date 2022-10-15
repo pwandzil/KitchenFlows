@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="345px" preserveAspectRatio="none" style="width:471px;height:345px;" version="1.1" viewBox="0 0 471 345" width="471.5px" zoomAndPan="magnify"><defs><filter height="300%" id="fr494jbndp5gt" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="1.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="2.0" dy="2.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="9" lengthAdjust="spacing" textLength="154.5" x="155.375" y="9.2012">'Recipes Deployment Diagram Style'</text><!--MD5=[15bb97bfa4bc6a90e9dc97099c7f84de]
+cluster Utensils--><polygon fill="#FFFFFF" filter="url(#fr494jbndp5gt)" points="153,24.2446,186.5,24.2446,190,36.4887,295,36.4887,295,191.2446,153,191.2446,153,24.2446" style="stroke:#000000;stroke-width:0.75;"/><line style="stroke:#000000;stroke-width:0.75;" x1="153" x2="190" y1="36.4887" y2="36.4887"/><text fill="#000000" font-family="sans-serif" font-size="7" font-weight="bold" lengthAdjust="spacing" textLength="29.5" x="155.5" y="32.5122">Utensils</text><!--MD5=[b5dc3cab59400ec3c04742995af6d5e7]
+cluster Warzywa.Obróbka--><polygon fill="#FFFFFF" filter="url(#fr494jbndp5gt)" points="8,103.7446,76,103.7446,79.5,115.9887,133,115.9887,133,335.9946,8,335.9946,8,103.7446" style="stroke:#000000;stroke-width:0.75;"/><line style="stroke:#000000;stroke-width:0.75;" x1="8" x2="79.5" y1="115.9887" y2="115.9887"/><text fill="#000000" font-family="sans-serif" font-size="7" font-weight="bold" lengthAdjust="spacing" textLength="64" x="10.5" y="112.0122">Warzywa.Obróbka</text><!--MD5=[d152d4a918aec51bdf3270b1a35e7443]
+cluster Włoszczyzna--><polygon fill="#FFFFFF" filter="url(#fr494jbndp5gt)" points="32,134.2446,81.5,134.2446,85,146.4887,113,146.4887,113,280.7446,32,280.7446,32,134.2446" style="stroke:#000000;stroke-width:0.75;"/><line style="stroke:#000000;stroke-width:0.75;" x1="32" x2="85" y1="146.4887" y2="146.4887"/><text fill="#000000" font-family="sans-serif" font-size="7" font-weight="bold" lengthAdjust="spacing" textLength="45.5" x="34.5" y="142.5122">Włoszczyzna</text><!--MD5=[22ac3d5fedd419d7c547a06af281d4cb]
+cluster Danie.Zupa--><rect fill="#FFFFFF" filter="url(#fr494jbndp5gt)" height="208.75" style="stroke:#000000;stroke-width:0.75;" width="82" x="315" y="130.7446"/><path d="M360.5,130.7446 L360.5,136.4887 L355.5,141.4887 L315,141.4887 " fill="none" style="stroke:#000000;stroke-width:0.75;"/><text fill="#000000" font-family="sans-serif" font-size="7" font-weight="bold" lengthAdjust="spacing" textLength="39.5" x="317" y="138.5122">Danie.Zupa</text><!--MD5=[f09a20fdc9bc5bcb9f5f120417208a40]
+entity Produkty--><polygon fill="#FFFFFF" filter="url(#fr494jbndp5gt)" points="62.25,48.2446,85.25,48.2446,88.75,58.7446,114.75,58.7446,114.75,78.2329,62.25,78.2329,62.25,48.2446" style="stroke:#000000;stroke-width:0.75;"/><line style="stroke:#000000;stroke-width:0.75;" x1="62.25" x2="88.75" y1="58.7446" y2="58.7446"/><text fill="#000000" font-family="sans-serif" font-size="7" lengthAdjust="spacing" textLength="30.5" x="67.75" y="69.5122">Produkty</text><!--MD5=[73acee9eb6b96a39e4e169537784d2ae]
+entity Garnek--><rect fill="#FEFECE" filter="url(#fr494jbndp5gt)" height="12.2441" style="stroke:#000000;stroke-width:0.75;" width="35.5" x="165.25" y="57.2446"/><text fill="#000000" font-family="sans-serif" font-size="7" lengthAdjust="spacing" textLength="24.5" x="170.75" y="66.0122">Garnek</text><!--MD5=[141fe8f441d2881625d14a09d0bba287]
+entity Rondel--><rect fill="#FEFECE" filter="url(#fr494jbndp5gt)" height="12.2441" style="stroke:#000000;stroke-width:0.75;" width="35" x="203.5" y="57.2446"/><text fill="#000000" font-family="sans-serif" font-size="7" lengthAdjust="spacing" textLength="24" x="209" y="66.0122">Rondel</text><!--MD5=[660b34e821f0fd738dbfd86eab515c5e]
+entity Patelnia--><rect fill="#FEFECE" filter="url(#fr494jbndp5gt)" height="12.2441" style="stroke:#000000;stroke-width:0.75;" width="38" x="241" y="57.2446"/><text fill="#000000" font-family="sans-serif" font-size="7" lengthAdjust="spacing" textLength="27" x="246.5" y="66.0122">Patelnia</text><!--MD5=[b66bb4ec0274b73c13e0ee8587895805]
+entity Tarka--><rect fill="#FEFECE" filter="url(#fr494jbndp5gt)" height="12.2441" style="stroke:#000000;stroke-width:0.75;" width="30.5" x="167.75" y="167.2446"/><text fill="#000000" font-family="sans-serif" font-size="7" lengthAdjust="spacing" textLength="19.5" x="173.25" y="176.0122">Tarka</text><!--MD5=[8020d232db4b7b4491f91ca4937fbf5a]
+entity Blender--><rect fill="#FEFECE" filter="url(#fr494jbndp5gt)" height="12.2441" style="stroke:#000000;stroke-width:0.75;" width="37" x="201" y="167.2446"/><text fill="#000000" font-family="sans-serif" font-size="7" lengthAdjust="spacing" textLength="26" x="206.5" y="176.0122">Blender</text><!--MD5=[12c9bbe9a62cb474636433b1ef196179]
+entity Cebula--><rect fill="#FEFECE" filter="url(#fr494jbndp5gt)" height="12.2441" style="stroke:#000000;stroke-width:0.75;" width="35" x="53" y="311.9946"/><text fill="#000000" font-family="sans-serif" font-size="7" lengthAdjust="spacing" textLength="24" x="58.5" y="320.7622">Cebula</text><!--MD5=[ef2661002ca1f76c4fea66df20daaccc]
+entity Marchewka--><rect fill="#FEFECE" filter="url(#fr494jbndp5gt)" height="12.2441" style="stroke:#000000;stroke-width:0.75;" width="49.5" x="45.75" y="167.2446"/><text fill="#000000" font-family="sans-serif" font-size="7" lengthAdjust="spacing" textLength="38.5" x="51.25" y="176.0122">Marchewka</text><!--MD5=[72755b388bf7a7349762d1644fd1e37d]
+entity Pietruszka--><rect fill="#FEFECE" filter="url(#fr494jbndp5gt)" height="12.2441" style="stroke:#000000;stroke-width:0.75;" width="46.5" x="47.25" y="220.2446"/><text fill="#000000" font-family="sans-serif" font-size="7" lengthAdjust="spacing" textLength="35.5" x="52.75" y="229.0122">Pietruszka</text><!--MD5=[4d596680606f5272ad06ce82632a4e0f]
+entity SelerKorzeń--><rect fill="#FEFECE" filter="url(#fr494jbndp5gt)" height="12.2441" style="stroke:#000000;stroke-width:0.75;" width="52.5" x="44.25" y="256.7446"/><text fill="#000000" font-family="sans-serif" font-size="7" lengthAdjust="spacing" textLength="41.5" x="49.75" y="265.5122">SelerKorzeń</text><!--MD5=[e46e33a0a24c9da1ff0d81acd5c7c54a]
+entity Rosół--><polygon fill="#FEFECE" filter="url(#fr494jbndp5gt)" points="334.25,163.7446,334.25,182.9887,364.75,182.9887,364.75,168.7446,359.75,163.7446,334.25,163.7446" style="stroke:#000000;stroke-width:0.75;"/><path d="M359.75,163.7446 L359.75,168.7446 L364.75,168.7446 " fill="#FEFECE" style="stroke:#000000;stroke-width:0.75;"/><text fill="#000000" font-family="sans-serif" font-size="7" lengthAdjust="spacing" textLength="19.5" x="339.75" y="176.0122">Rosół</text><!--MD5=[9eb9344ef0b3fa8cf6a107c38f9a98b4]
+entity Pomidorowa--><polygon fill="#FEFECE" filter="url(#fr494jbndp5gt)" points="331,216.7446,331,235.9887,385,235.9887,385,221.7446,380,216.7446,331,216.7446" style="stroke:#000000;stroke-width:0.75;"/><path d="M380,216.7446 L380,221.7446 L385,221.7446 " fill="#FEFECE" style="stroke:#000000;stroke-width:0.75;"/><text fill="#000000" font-family="sans-serif" font-size="7" lengthAdjust="spacing" textLength="43" x="336.5" y="229.0122">Pomidorowa</text><!--MD5=[9448cc5ea6f5948b1b59a46e6b32dc90]
+entity Barszcz--><polygon fill="#FEFECE" filter="url(#fr494jbndp5gt)" points="339.5,253.2446,339.5,272.4888,376.5,272.4888,376.5,258.2446,371.5,253.2446,339.5,253.2446" style="stroke:#000000;stroke-width:0.75;"/><path d="M371.5,253.2446 L371.5,258.2446 L376.5,258.2446 " fill="#FEFECE" style="stroke:#000000;stroke-width:0.75;"/><text fill="#000000" font-family="sans-serif" font-size="7" lengthAdjust="spacing" textLength="26" x="345" y="265.5122">Barszcz</text><!--MD5=[a3ca6548eb193a2d948f902b1dc850c2]
+entity Ogórkowa--><polygon fill="#FEFECE" filter="url(#fr494jbndp5gt)" points="334.75,308.4946,334.75,327.7388,381.25,327.7388,381.25,313.4946,376.25,308.4946,334.75,308.4946" style="stroke:#000000;stroke-width:0.75;"/><path d="M376.25,308.4946 L376.25,313.4946 L381.25,313.4946 " fill="#FEFECE" style="stroke:#000000;stroke-width:0.75;"/><text fill="#000000" font-family="sans-serif" font-size="7" lengthAdjust="spacing" textLength="35.5" x="340.25" y="320.7622">Ogórkowa</text><!--MD5=[65703937b6bb2e409d8175bc051fb4cd]
+entity HungryCustomer--><ellipse cx="439" cy="301.9946" fill="#FEFECE" filter="url(#fr494jbndp5gt)" rx="4" ry="4" style="stroke:#A80036;stroke-width:0.75;"/><path d="M439,305.9946 L439,319.4946 M432.5,309.9946 L445.5,309.9946 M439,319.4946 L432.5,326.9946 M439,319.4946 L445.5,326.9946 " fill="none" filter="url(#fr494jbndp5gt)" style="stroke:#A80036;stroke-width:0.75;"/><text fill="#000000" font-family="sans-serif" font-size="7" lengthAdjust="spacing" textLength="58.5" x="409.75" y="337.0122">HungryCustomer</text><!--MD5=[e925a87776988a228664ba5e4199e00a]
+link Marchewka to Pietruszka--><!--MD5=[d33b0a9732645dc5d3435a756757040d]
+link Pietruszka to SelerKorzeń--><!--MD5=[32cf683e50200ecefd3c044aca6007c9]
+link SelerKorzeń to Cebula--><!--MD5=[ab19dfd42c1158b2009da59d56be7783]
+link Rosół to Pomidorowa--><!--MD5=[3e9d84d4b997715956d788aed9836f93]
+link Pomidorowa to Barszcz--><!--MD5=[db47dcabb7bfc8b5e68cfc762c314686]
+link Barszcz to Ogórkowa--><!--MD5=[efa6df63a9b5ad89b263917a2bb511d9]
+link Produkty to Utensils--><path d="M104.91,48.2396 C118.855,36.6146 140.025,21.5096 161.75,15.4946 C164.975,14.5996 279.025,14.5996 282.25,15.4946 C284.7275,16.1809 286.7388,17.3814 288.3599,18.964 C289.1704,19.7552 289.8834,20.642 290.5083,21.6077 C290.8208,22.0906 291.1112,22.5932 291.3808,23.1135 C291.5156,23.3736 291.6452,23.6382 291.7697,23.9069 C291.8008,23.9741 291.8317,24.0415 291.8622,24.1092 " fill="none" id="Produkty-Utensils" style="stroke:#A80036;stroke-width:0.5;"/><!--MD5=[105036205821782c0e8e7412e124c3a8]
+link Produkty to Warzywa.Obróbka--><path d="M62.21,76.5646 C54.025,81.6046 45.57,88.0446 39.5,95.7446 C38.1156,97.5002 36.7975,99.3313 35.5427,101.2218 C35.229,101.6945 34.9193,102.1708 34.6135,102.6507 C34.4605,102.8906 34.3086,103.1314 34.1576,103.373 C34.0822,103.4938 34.0069,103.6148 33.9319,103.736 " fill="none" id="Produkty-Warzywa.Obróbka" style="stroke:#A80036;stroke-width:0.5;"/><!--MD5=[c26d845789f51ef30ce99a190c27d773]
+link Utensils to Danie.Zupa--><path d="M295.0406,64.5794 C295.1154,64.5973 295.191,64.6155 295.2675,64.6341 C295.4204,64.6713 295.5766,64.7097 295.7359,64.7495 C298.2845,65.3855 301.6322,66.359 305.1956,67.7684 C312.3225,70.5871 320.3125,75.1496 324.5,82.2446 C327.02,86.5146 325.7275,108.5046 323.765,129.7371 C323.7343,130.0689 323.7035,130.4004 323.6725,130.7318 " fill="none" id="Utensils-Danie.Zupa" style="stroke:#A80036;stroke-width:0.5;"/><!--MD5=[6f4c9c430536b5328b478a94466d0c0e]
+link Włoszczyzna to Rosół--><path d="M113.0336,163.2383 C113.1055,163.0758 113.1783,162.9118 113.2521,162.7462 C115.6139,157.4501 118.9534,150.6324 123.2556,143.449 C131.86,129.0821 144.315,113.2521 160.5,105.2046 C194.725,88.1846 302.375,81.6796 332.5,105.2046 C349.285,118.3096 351.07,145.2596 350.515,161.0246 " fill="none" id="Włoszczyzna-to-Rosół" style="stroke:#A80036;stroke-width:0.5;"/><polygon fill="#A80036" points="350.4,163.6446,352.6034,159.2406,350.5142,161.1472,348.6076,159.058,350.4,163.6446" style="stroke:#A80036;stroke-width:0.5;"/><polygon fill="#000000" points="312.2499,87.0489,307.7138,85.6217,307.7412,88.5605,312.2499,87.0489" style="stroke:#000000;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="8" x="314.75" y="89.5288">3x</text><!--MD5=[8a1f2c913063913d8ae5aeff3d3e36e4]
+link Włoszczyzna to Pomidorowa--><path d="M113.099,176.4479 C113.1826,176.5015 113.2674,176.5558 113.3534,176.6108 C113.6971,176.8305 114.059,177.0606 114.4383,177.3001 C117.4722,179.2162 121.6156,181.7377 126.4538,184.4334 C136.13,189.8246 148.585,195.9121 160.5,199.2446 C180.475,204.8346 186.4,200.8246 207,203.2446 C249.31,208.2096 298.015,215.8096 328.405,220.7796 " fill="none" id="Włoszczyzna-to-Pomidorowa" style="stroke:#A80036;stroke-width:0.5;"/><polygon fill="#A80036" points="330.925,221.1946,326.8036,218.4994,328.4573,220.7941,326.1627,222.4478,330.925,221.1946" style="stroke:#A80036;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="8" x="274" y="210.5288">3x</text><!--MD5=[b5679482bb2a04a23dbc2d4cf5fdb6a3]
+link Włoszczyzna to Barszcz--><path d="M113.0866,176.0343 C113.1289,176.0578 113.1715,176.0813 113.2144,176.105 C113.3002,176.1525 113.3871,176.2005 113.4752,176.2492 C113.8276,176.4438 114.1984,176.6481 114.5866,176.8613 C117.6927,178.5674 121.9178,180.8502 126.8081,183.3934 C136.5888,188.4796 149.03,194.6071 160.5,199.2446 C223.225,224.6096 300.325,246.6946 336.87,256.6396 " fill="none" id="Włoszczyzna-to-Barszcz" style="stroke:#A80036;stroke-width:0.5;"/><polygon fill="#A80036" points="339.43,257.3346,335.6132,254.223,337.0178,256.678,334.5627,258.0825,339.43,257.3346" style="stroke:#A80036;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="8" x="265" y="228.7788">3x</text><!--MD5=[bbd1cf34b70da9dbe167e782696b73c5]
+link Włoszczyzna to Ogórkowa--><path d="M113.1199,176.4919 C113.1814,176.5328 113.2436,176.5742 113.3065,176.6159 C113.8092,176.9501 114.3526,177.311 114.9347,177.6971 C116.0991,178.4695 117.4186,179.3431 118.8788,180.3074 C124.7194,184.1646 132.81,189.4721 142.2175,195.5471 C161.0325,207.6971 185.115,222.9171 207,235.7446 C253.155,262.7946 308.8,292.0946 337.95,307.1946 " fill="none" id="Włoszczyzna-to-Ogórkowa" style="stroke:#A80036;stroke-width:0.5;"/><polygon fill="#A80036" points="340.345,308.4346,337.2733,304.5856,338.1264,307.2824,335.4297,308.1355,340.345,308.4346" style="stroke:#A80036;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="8" x="231" y="247.0288">3x</text><!--MD5=[d9d9ce328c0d34a229669fdde566025e]
+link Rosół to HungryCustomer--><path d="M358.39,182.8046 C366.33,191.1796 377.995,204.1896 386.5,216.7446 C403.705,242.1396 419.38,273.8546 429.035,294.8446 " fill="none" id="Rosół-to-HungryCustomer" style="stroke:#A80036;stroke-width:0.5;"/><polygon fill="#A80036" points="430.125,297.2246,430.0836,292.3004,429.0905,294.9487,426.4422,293.9556,430.125,297.2246" style="stroke:#A80036;stroke-width:0.5;"/><!--MD5=[86360adef42e229f52f858c9bf12ae79]
+link Pomidorowa to HungryCustomer--><path d="M365.17,235.9346 C377.495,251.6696 402.31,283.0646 412,293.2446 C412.63,293.9046 413.275,294.5696 413.93,295.2346 " fill="none" id="Pomidorowa-to-HungryCustomer" style="stroke:#A80036;stroke-width:0.5;"/><polygon fill="#A80036" points="415.93,297.2296,414.153,292.637,414.1587,295.4654,411.3302,295.4711,415.93,297.2296" style="stroke:#A80036;stroke-width:0.5;"/><!--MD5=[c5e12d8a8fc762f295dff6f2437571de]
+link Barszcz to HungryCustomer--><path d="M371.56,272.3246 C381.265,278.8246 394.75,287.8596 407.115,296.1396 " fill="none" id="Barszcz-to-HungryCustomer" style="stroke:#A80036;stroke-width:0.5;"/><polygon fill="#A80036" points="409.245,297.5646,406.6201,293.3981,407.1682,296.1729,404.3934,296.721,409.245,297.5646" style="stroke:#A80036;stroke-width:0.5;"/><!--MD5=[486c693b01b401d588a5fd3f8e14f531]
+link Ogórkowa to HungryCustomer--><path d="M381.255,317.9946 C389.705,317.9946 398.155,317.9946 406.605,317.9946 " fill="none" id="Ogórkowa-to-HungryCustomer" style="stroke:#A80036;stroke-width:0.5;"/><polygon fill="#A80036" points="409.225,317.9946,404.725,315.9946,406.725,317.9946,404.725,319.9946,409.225,317.9946" style="stroke:#A80036;stroke-width:0.5;"/><!--MD5=[8155662990bd97ac42ab224dc91cca69]
+link Garnek to Rondel--><!--MD5=[425009705903b9774c25373af07f49a5]
+link Rondel to Patelnia--><!--MD5=[6a2c421dcd7366e9d70ba326ed2c168f]
+link Garnek to Tarka--><!--MD5=[0133da698d34ba00f27a2b296416e725]
+link Tarka to Blender--><!--MD5=[7f27f8a5761b25085c05923f4d45154d]
+@startuml Recipes1_Deployment
+
+Title 'Recipes Deployment Diagram Style'
+'left to right direction
+'top to bottom direction
+scale 0.5
+skinparam nodesep 5
+skinparam ranksep 5
+skinparam margin 1
+skinparam padding 1
+'skinparam linetype ortho
+
+actor HungryCustomer
+folder Produkty {
+}
+folder Utensils {
+  card Garnek
+  card Rondel
+  card Patelnia
+  card Tarka
+  card Blender
+}
+folder Warzywa.Obróbka {
+  folder Włoszczyzna {
+    card Marchewka
+    card Pietruszka
+    card SelerKorzeń
+    Marchewka     -[hidden]d- Pietruszka
+    Pietruszka    -[hidden]d- SelerKorzeń
+  }
+  card Cebula
+  SelerKorzeń -[hidden]d-> Cebula
+}
+
+frame Danie.Zupa {
+ file Rosół
+ file Pomidorowa
+ file Barszcz
+ file Ogórkowa
+ Rosół      -[hidden]d- Pomidorowa
+ Pomidorowa -[hidden]d- Barszcz
+ Barszcz    -[hidden]d- Ogórkowa
+}
+
+Produkty -r- Utensils
+Produkty -d- Warzywa.Obróbka
+Utensils -d- Danie.Zupa
+
+'Warzywa.Obróbka -right-> Danie.Zupa
+
+Włoszczyzna   -r-> Rosół : 3x >
+Włoszczyzna   -r-> Pomidorowa : 3x
+Włoszczyzna   -r-> Barszcz : 3x
+Włoszczyzna   -r-> Ogórkowa : 3x
+
+Rosół -r-> HungryCustomer
+Pomidorowa -r-> HungryCustomer
+Barszcz -r-> HungryCustomer
+Ogórkowa -r-> HungryCustomer
+@enduml
+
+@startuml Recipes1_Deployment
+
+Title 'Recipes Deployment Diagram Style'
+scale 0.5
+skinparam nodesep 5
+skinparam ranksep 5
+skinparam margin 1
+skinparam padding 1
+
+actor HungryCustomer
+folder Produkty {
+}
+folder Utensils {
+  card Garnek
+  card Rondel
+  card Patelnia
+  card Tarka
+  card Blender
+}
+folder Warzywa.Obróbka {
+  folder Włoszczyzna {
+    card Marchewka
+    card Pietruszka
+    card SelerKorzeń
+    Marchewka     -[hidden]d- Pietruszka
+    Pietruszka    -[hidden]d- SelerKorzeń
+  }
+  card Cebula
+  SelerKorzeń -[hidden]d-> Cebula
+}
+
+frame Danie.Zupa {
+ file Rosół
+ file Pomidorowa
+ file Barszcz
+ file Ogórkowa
+ Rosół      -[hidden]d- Pomidorowa
+ Pomidorowa -[hidden]d- Barszcz
+ Barszcz    -[hidden]d- Ogórkowa
+}
+
+Produkty -r- Utensils
+Produkty -d- Warzywa.Obróbka
+Utensils -d- Danie.Zupa
+
+
+Włoszczyzna   -r-> Rosół : 3x >
+Włoszczyzna   -r-> Pomidorowa : 3x
+Włoszczyzna   -r-> Barszcz : 3x
+Włoszczyzna   -r-> Ogórkowa : 3x
+
+Rosół -r-> HungryCustomer
+Pomidorowa -r-> HungryCustomer
+Barszcz -r-> HungryCustomer
+Ogórkowa -r-> HungryCustomer
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 11:25:05 CET 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: GB
+--></g></svg>

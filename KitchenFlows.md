@@ -94,8 +94,9 @@ rectangle TransportationOut
 <div hidden> 
 
 ```
-@startuml Recipes1
+@startuml Recipes1_Deployment
 
+Title 'Recipes Deployment Diagram Style'
 'left to right direction
 'top to bottom direction
 scale 0.5
@@ -157,14 +158,15 @@ Ogórkowa -r-> HungryCustomer
 </div>
 
 
-![](out/KitchenFlows/Recipes1.svg)
+![](out/KitchenFlows/Recipes1_Deployment.svg)
 
 ## Class diagram
 <div hidden> 
 
 ```
-@startuml Recipes1
+@startuml Recipes2_Class
 
+Title 'Recipes2 Class Diagram Style'
 'left to right direction
 'top to bottom direction
 scale 0.5
@@ -297,6 +299,8 @@ namespace Węglowodany #red {
 namespace Mąki #orange {
   class Ryzowa
   class Pszenna
+  class Ziemniaczana
+  class BułkaTarta
 }
 
 namespace Przyprawy #purple {
@@ -320,6 +324,11 @@ namespace Przyprawy #purple {
   class Oregano
   class Bazylia
   class ZiołaProwansalskie
+  class Kozieradka
+  class Kumin
+  class Gorczyca
+  class Cynamon
+  class Kardamon
 }
 
 
@@ -402,6 +411,9 @@ Owoce.Suszone.Rodzynki   -r-> Danie.Śniadanie.Owsianka5p
 Przyprawy.Sól            -r-> Danie.Śniadanie.Owsianka5p
 Tłuszcze.Masło           -r-> Danie.Śniadanie.Owsianka5p
 Tłuszcze.Ziarna.SiemieLniane -r-> Danie.Śniadanie.Owsianka5p
+Przyprawy.Żywe.Imbir     -r-> Danie.Śniadanie.Owsianka5p
+Przyprawy.Kardamon       -r-> Danie.Śniadanie.Owsianka5p
+Przyprawy.Cynamon        -r-> Danie.Śniadanie.Owsianka5p
 
 'Angielskie
 Białko.Frankfurterki     -r-> Danie.Śniadanie.Angielskie
@@ -409,10 +421,22 @@ Węglowodany.Chleb        -r-> Danie.Śniadanie.Angielskie
 Tłuszcze.Masło           -r-> Danie.Śniadanie.Angielskie
 Warzywa.Surowe.Pomidory  -r-> Danie.Śniadanie.Angielskie
 
+'IndyjskiDal
+Warzywa.Obróbka.Cebula   -r-> Danie.Śniadanie.IndyjskiDal
+Przyprawy.Kozieradka     -r-> Danie.Śniadanie.IndyjskiDal
+Przyprawy.Gorczyca       -r-> Danie.Śniadanie.IndyjskiDal
+Przyprawy.Kumin          -r-> Danie.Śniadanie.IndyjskiDal
+
 
 ' Prod-Danie.DrugieDanie =========================================
 namespace Danie.DrugieDanie {
       class Schabowy
+      class Mielone
+      class Spaghetti
+      class PastaCarbonara
+      class Gołąbki
+      class GulaszzPekinki
+      class PadThai
 }
 Białko.Wieprzowina               -r-> Danie.DrugieDanie.Schabowy
 Warzywa.Kiszonki.KapustaKiszona  -r-> Danie.DrugieDanie.Schabowy
@@ -460,8 +484,9 @@ Tłuszcze         -[hidden]d- Węglowodany
 Węglowodany      -[hidden]d- Mąki
 Mąki             -[hidden]d- Przyprawy
 
-Danie.Zupa.Rybna       -[hidden]d- Danie.Śniadanie
-Danie.Śniadanie        -[hidden]d- Danie.DrugieDanie
+Danie.Zupa.Rybna            -[hidden]d- Danie.Śniadanie
+Danie.Śniadanie             -[hidden]d- Danie.DrugieDanie
+'Danie.Śniadanie.IndyjskiDal -[hidden]d- Danie.DrugieDanie
 
 
 @enduml
@@ -469,4 +494,4 @@ Danie.Śniadanie        -[hidden]d- Danie.DrugieDanie
 </div>
 
 
-![](out/KitchenFlows/Recipes1.svg)
+![](out/KitchenFlows/Recipes2_Class.svg)
