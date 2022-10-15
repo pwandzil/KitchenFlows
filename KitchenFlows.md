@@ -243,10 +243,16 @@ namespace Tłuszcze #yellow {
  class Olej
  class Oliwa
  class Masło
+ namespace Ziarna {
+   class Słonecznika
+   class SiemieLniane
+ }
 }
 
 namespace Białko #lightblue {
  class Parówki
+ class Frankfurerki
+ class Kiełbasa
  class Wołowina
  class Wieprzowina
  class Kurczak
@@ -270,8 +276,14 @@ namespace Owoce #pink {
   class Śliwki
   class Cytryny
   class Pomarańcze
+  class Kokos
+  namespace Suszone {
+    class Rodzynki
+    class Daktyle
+  }
 }
 namespace Węglowodany #red {
+ class Chleb
  class Ziemniaki
  class Makaron
  class KaszaOwsiana
@@ -329,13 +341,13 @@ namespace Danie.Zupa {
  class Dyniowa
  class Pieczarkowa
  class Rybna
- Rosół      -[hidden]d- Pomidorowa
- Pomidorowa -[hidden]d- Barszcz
- Barszcz    -[hidden]d- Ogórkowa
- Ogórkowa   -[hidden]d- Krupnik
- Krupnik  -[hidden]d- Jarzynowa
- Jarzynowa -[hidden]d-  Dyniowa
- Dyniowa  -[hidden]d- Pieczarkowa
+ Rosół        -[hidden]d- Pomidorowa
+ Pomidorowa   -[hidden]d- Barszcz
+ Barszcz      -[hidden]d- Ogórkowa
+ Ogórkowa     -[hidden]d- Krupnik
+ Krupnik      -[hidden]d- Jarzynowa
+ Jarzynowa    -[hidden]d- Dyniowa
+ Dyniowa      -[hidden]d- Pieczarkowa
  Pieczarkowa  -[hidden]d- Rybna
 }
 ' Danie.Zupa-Half-Prod =========================================
@@ -374,14 +386,29 @@ Danie.Zupa.Półprodukt.Bulion -r-> Danie.Zupa.Rybna
 ' Prod-Danie.Śniadanie =========================================
 namespace Danie.Śniadanie {
   class Owsianka5p
+  class Angielskie
+  class AmerykańskiePankejki
+  class IndyjskiDal
+  Owsianka5p           -[hidden]d- Angielskie
+  Angielskie           -[hidden]d- AmerykańskiePankejki
+  AmerykańskiePankejki -[hidden]d- IndyjskiDal
 }
 
-'Danie.Śniadanie
+'Owianka5p
 Węglowodany.KaszaOwsiana -r-> Danie.Śniadanie.Owsianka5p
 Owoce.Jabłka             -r-> Danie.Śniadanie.Owsianka5p
 Owoce.Banany             -r-> Danie.Śniadanie.Owsianka5p
+Owoce.Suszone.Rodzynki   -r-> Danie.Śniadanie.Owsianka5p
 Przyprawy.Sól            -r-> Danie.Śniadanie.Owsianka5p
 Tłuszcze.Masło           -r-> Danie.Śniadanie.Owsianka5p
+Tłuszcze.Ziarna.SiemieLniane -r-> Danie.Śniadanie.Owsianka5p
+
+'Angielskie
+Białko.Frankfurterki     -r-> Danie.Śniadanie.Angielskie
+Węglowodany.Chleb        -r-> Danie.Śniadanie.Angielskie
+Tłuszcze.Masło           -r-> Danie.Śniadanie.Angielskie
+Warzywa.Surowe.Pomidory  -r-> Danie.Śniadanie.Angielskie
+
 
 ' Prod-Danie.DrugieDanie =========================================
 namespace Danie.DrugieDanie {
@@ -405,6 +432,9 @@ Danie.Zupa.Dyniowa -r-> Konsument
 Danie.Zupa.Pieczarkowa -r-> Konsument
 Danie.Zupa.Rybna            -r-> Konsument
 Danie.Śniadanie.Owsianka5p  -r-> Konsument
+Danie.Śniadanie.Angielskie  -r-> Konsument
+Danie.Śniadanie.AmerykańskiePankejki  -r-> Konsument
+Danie.Śniadanie.IndyjskiDal  -r-> Konsument
 Danie.DrugieDanie.Schabowy  -r-> Konsument
 
 '
