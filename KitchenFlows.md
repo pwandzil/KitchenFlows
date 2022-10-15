@@ -127,7 +127,7 @@ folder Warzywa.Obróbka {
   SelerKorzeń -[hidden]d-> Cebula
 }
 
-frame Zupa {
+frame Danie.Zupa {
  file Rosół
  file Pomidorowa
  file Barszcz
@@ -139,9 +139,9 @@ frame Zupa {
 
 Produkty -r- Utensils
 Produkty -d- Warzywa.Obróbka
-Utensils -d- Zupa
+Utensils -d- Danie.Zupa
 
-'Warzywa.Obróbka -right-> Zupa
+'Warzywa.Obróbka -right-> Danie.Zupa
 
 Włoszczyzna   -r-> Rosół : 3x >
 Włoszczyzna   -r-> Pomidorowa : 3x
@@ -311,11 +311,11 @@ namespace Przyprawy #purple {
 }
 
 
-' Prod-Zupa =========================================
+' Prod-Danie.Zupa =========================================
 namespace Danie {
 
 }
-namespace Zupa {
+namespace Danie.Zupa {
   namespace Półprodukt {
     class Bulion
     class OgórkiSmazone
@@ -338,74 +338,74 @@ namespace Zupa {
  Dyniowa  -[hidden]d- Pieczarkowa
  Pieczarkowa  -[hidden]d- Rybna
 }
-' Zupa-Half-Prod =========================================
-Warzywa.Obróbka.Włoszczyzna      -r-> Zupa.Półprodukt.Bulion : 1x >
-Przyprawy.Sól                    -r-> Zupa.Półprodukt.Bulion
-Warzywa.Kiszonki.OgórkiKiszone   -r-> Zupa.Półprodukt.OgórkiSmazone
-Tłuszcze.Masło                   -r-> Zupa.Półprodukt.OgórkiSmazone
+' Danie.Zupa-Half-Prod =========================================
+Warzywa.Obróbka.Włoszczyzna      -r-> Danie.Zupa.Półprodukt.Bulion : 1x >
+Przyprawy.Sól                    -r-> Danie.Zupa.Półprodukt.Bulion
+Warzywa.Kiszonki.OgórkiKiszone   -r-> Danie.Zupa.Półprodukt.OgórkiSmazone
+Tłuszcze.Masło                   -r-> Danie.Zupa.Półprodukt.OgórkiSmazone
 
-Nagłówek.Utensils.Garnek -[dotted]-> Zupa.Półprodukt.Bulion
-Nagłówek.Utensils.Rondel -[dotted]-> Zupa.Półprodukt.OgórkiSmazone
-Nagłówek.Przepływy.Ogień -[dotted]-> Zupa.Półprodukt.OgórkiSmazone
+Nagłówek.Utensils.Garnek -[dotted]-> Danie.Zupa.Półprodukt.Bulion
+Nagłówek.Utensils.Rondel -[dotted]-> Danie.Zupa.Półprodukt.OgórkiSmazone
+Nagłówek.Przepływy.Ogień -[dotted]-> Danie.Zupa.Półprodukt.OgórkiSmazone
 
 ' Rosół
-Zupa.Półprodukt.Bulion -r-> Zupa.Rosół
+Danie.Zupa.Półprodukt.Bulion -r-> Danie.Zupa.Rosół
 'Pomidorowa
-Zupa.Półprodukt.Bulion -r-> Zupa.Pomidorowa
-Puszki.Passata         -r-> Zupa.Pomidorowa
+Danie.Zupa.Półprodukt.Bulion -r-> Danie.Zupa.Pomidorowa
+Puszki.Passata         -r-> Danie.Zupa.Pomidorowa
 'Barszcz
-Zupa.Półprodukt.Bulion -r-> Zupa.Barszcz
-Warzywa.Obróbka.Buraki -r-> Zupa.Barszcz
+Danie.Zupa.Półprodukt.Bulion -r-> Danie.Zupa.Barszcz
+Warzywa.Obróbka.Buraki -r-> Danie.Zupa.Barszcz
 'Ogórkowa
-Zupa.Półprodukt.Bulion -r-> Zupa.Ogórkowa
-Zupa.Półprodukt.OgórkiSmazone -r-> Zupa.Ogórkowa
+Danie.Zupa.Półprodukt.Bulion -r-> Danie.Zupa.Ogórkowa
+Danie.Zupa.Półprodukt.OgórkiSmazone -r-> Danie.Zupa.Ogórkowa
 'Pozostałe
-Zupa.Półprodukt.Bulion -r-> Zupa.Krupnik
-Węglowodany.KaszaJęczmienna -r-> Zupa.Krupnik
+Danie.Zupa.Półprodukt.Bulion -r-> Danie.Zupa.Krupnik
+Węglowodany.KaszaJęczmienna -r-> Danie.Zupa.Krupnik
 'Jarzynowa
-Zupa.Półprodukt.Bulion -r-> Zupa.Jarzynowa
-Węglowodany.Ziemniaki  -r-> Zupa.Jarzynowa
+Danie.Zupa.Półprodukt.Bulion -r-> Danie.Zupa.Jarzynowa
+Węglowodany.Ziemniaki  -r-> Danie.Zupa.Jarzynowa
 'Dyniowa
-Zupa.Półprodukt.Bulion -r-> Zupa.Dyniowa
-Warzywa.Obróbka.Dynia  -r-> Zupa.Dyniowa
-Zupa.Półprodukt.Bulion -r-> Zupa.Pieczarkowa
-Zupa.Półprodukt.Bulion -r-> Zupa.Rybna
+Danie.Zupa.Półprodukt.Bulion -r-> Danie.Zupa.Dyniowa
+Warzywa.Obróbka.Dynia  -r-> Danie.Zupa.Dyniowa
+Danie.Zupa.Półprodukt.Bulion -r-> Danie.Zupa.Pieczarkowa
+Danie.Zupa.Półprodukt.Bulion -r-> Danie.Zupa.Rybna
 
-' Prod-Śniadanie =========================================
-namespace Śniadanie {
+' Prod-Danie.Śniadanie =========================================
+namespace Danie.Śniadanie {
   class Owsianka5p
 }
 
-'Śniadanie
-Węglowodany.KaszaOwsiana -r-> Śniadanie.Owsianka5p
-Owoce.Jabłka             -r-> Śniadanie.Owsianka5p
-Owoce.Banany             -r-> Śniadanie.Owsianka5p
-Przyprawy.Sól            -r-> Śniadanie.Owsianka5p
-Tłuszcze.Masło           -r-> Śniadanie.Owsianka5p
+'Danie.Śniadanie
+Węglowodany.KaszaOwsiana -r-> Danie.Śniadanie.Owsianka5p
+Owoce.Jabłka             -r-> Danie.Śniadanie.Owsianka5p
+Owoce.Banany             -r-> Danie.Śniadanie.Owsianka5p
+Przyprawy.Sól            -r-> Danie.Śniadanie.Owsianka5p
+Tłuszcze.Masło           -r-> Danie.Śniadanie.Owsianka5p
 
-' Prod-DrugieDanie =========================================
-namespace DrugieDanie {
+' Prod-Danie.DrugieDanie =========================================
+namespace Danie.DrugieDanie {
       class Schabowy
 }
-Białko.Wieprzowina               -r-> DrugieDanie.Schabowy
-Warzywa.Kiszonki.KapustaKiszona  -r-> DrugieDanie.Schabowy
-Przyprawy.Sól                    -r-> DrugieDanie.Schabowy
+Białko.Wieprzowina               -r-> Danie.DrugieDanie.Schabowy
+Warzywa.Kiszonki.KapustaKiszona  -r-> Danie.DrugieDanie.Schabowy
+Przyprawy.Sól                    -r-> Danie.DrugieDanie.Schabowy
 
-'DrugieDanie
+'Danie.DrugieDanie
 ' Consumer =========================================
 class Konsument
-'Zupa
-Zupa.Rosół -r-> Konsument
-Zupa.Pomidorowa -r-> Konsument
-Zupa.Barszcz -r-> Konsument
-Zupa.Ogórkowa -r-> Konsument
-Zupa.Krupnik -r-> Konsument
-Zupa.Jarzynowa -r-> Konsument
-Zupa.Dyniowa -r-> Konsument
-Zupa.Pieczarkowa -r-> Konsument
-Zupa.Rybna            -r-> Konsument
-Śniadanie.Owsianka5p  -r-> Konsument
-DrugieDanie.Schabowy  -r-> Konsument
+'Danie.Zupa
+Danie.Zupa.Rosół -r-> Konsument
+Danie.Zupa.Pomidorowa -r-> Konsument
+Danie.Zupa.Barszcz -r-> Konsument
+Danie.Zupa.Ogórkowa -r-> Konsument
+Danie.Zupa.Krupnik -r-> Konsument
+Danie.Zupa.Jarzynowa -r-> Konsument
+Danie.Zupa.Dyniowa -r-> Konsument
+Danie.Zupa.Pieczarkowa -r-> Konsument
+Danie.Zupa.Rybna            -r-> Konsument
+Danie.Śniadanie.Owsianka5p  -r-> Konsument
+Danie.DrugieDanie.Schabowy  -r-> Konsument
 
 '
 ' Layout =========================================
@@ -430,8 +430,8 @@ Tłuszcze         -[hidden]d- Węglowodany
 Węglowodany      -[hidden]d- Mąki
 Mąki             -[hidden]d- Przyprawy
 
-Zupa             -[hidden]d- Śniadanie
-Śniadanie        -[hidden]d- DrugieDanie
+Danie.Zupa.Rybna       -[hidden]d- Danie.Śniadanie
+Danie.Śniadanie        -[hidden]d- Danie.DrugieDanie
 
 
 @enduml
