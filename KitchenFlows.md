@@ -185,6 +185,7 @@ namespace Nagłówek {
     class Rondel
     class Patelnia
     class Tarka
+    class Blender
   }
   namespace Przepływy {
     class Gaz
@@ -192,16 +193,25 @@ namespace Nagłówek {
     class Woda
     class Ogień
   }
-  namespace Inne1 {
-
+  namespace Przechowywanie {
+    class Pojemniki
+    class Termos
+  }
+  namespace Rozpad {
+    class Workinaśmieci
+    class Sóldozmywarki
+    'class Nabłyszczacz
   }
   Nagłówek.Produkty -r-> Nagłówek.Utensils
   Nagłówek.Utensils -r-> Nagłówek.Przepływy
-  Nagłówek.Przepływy -r-> Nagłówek.Inne1
+  Nagłówek.Przepływy -r-> Nagłówek.Przechowywanie
+  Nagłówek.Przechowywanie -r-> Nagłówek.Rozpad
 }
 
 namespace Puszki #grey {
+  class MleczkoKokosowe
   class Groszek
+  class Kukurydza
   class Marchewkazgroszkiem
   class PomidoryKrojone
   class Passata
@@ -212,7 +222,11 @@ namespace Puszki #grey {
 }
 
 namespace Warzywa.Obróbka #green {
-  class Włoszczyzna 
+  namespace Mrożonki {
+    class Trio
+    class Pięć
+  }
+  class Włoszczyzna
     Włoszczyzna : Marchewka
     Włoszczyzna : Pietruszka
     Włoszczyzna : SelerKorzeń
@@ -228,9 +242,23 @@ namespace Warzywa.Obróbka #green {
   class Dynia
   class DyniaPizmowa
 }
-namespace Warzywa.Kiszonki #navy {
-  class OgórkiKiszone
-  class KapustaKiszona
+namespace Przetwory #darkcyan {
+  namespace Fermentat {
+    class Browar
+    class Wino
+    class Bimber
+  }
+  namespace Kiszone {
+    class OgórkiKiszone
+    class KapustaKiszona
+    class CukiniaKiszona
+  }
+  namespace Dżem {
+    class Wiśniowy
+  }
+  namespace Kompot {
+    class Jabłkowy
+  }
 }
 
 namespace Warzywa.Surowe #lightgreen {
@@ -252,9 +280,15 @@ namespace Tłuszcze #yellow {
 }
 
 namespace Białko #lightblue {
- class Parówki
- class Frankfurerki
- class Kiełbasa
+  namespace Kiełby {
+    class Parówki
+    class Frankfurterki
+    class Kiełbasa
+  }
+  class PorcjaRosołowa
+    PorcjaRosołowa : Szponder
+    PorcjaRosołowa : SzyjaIndycza
+    PorcjaRosołowa : Skrzydełka
  class Wołowina
  class Wieprzowina
  class Kurczak
@@ -262,8 +296,6 @@ namespace Białko #lightblue {
  class Ciecierzyca
  class Soczewica
  class Fasola
-}
-
 namespace Nabiał {
   class Jajka
   class Ser
@@ -271,6 +303,8 @@ namespace Nabiał {
   class Śmietana
   class Mleko
 }
+}
+
 
 namespace Owoce #pink {
   class Jabłka
@@ -283,17 +317,23 @@ namespace Owoce #pink {
     class Rodzynki
     class Daktyle
   }
+  namespace Soki {
+    class Pomarańczowy
+    class Grapefruitowy
+  }
 }
 namespace Węglowodany #red {
  class Chleb
  class Ziemniaki
  class Makaron
- class KaszaOwsiana
- class KaszaJaglana
- class KaszaJęczmienna
- class KaszaGryczna
- class KaszaKuskus
- class Quinoa
+ namespace Kasza {
+   class Owsiana
+   class Jaglana
+   class Jęczmienna
+   class Gryczna
+   class Kuskus
+   class Quinoa
+ }
 }
 
 namespace Mąki #orange {
@@ -304,6 +344,12 @@ namespace Mąki #orange {
 }
 
 namespace Przyprawy #purple {
+  namespace Sosy {
+    class Grzybowy
+    class Pieczarkowy
+    class Pieczeniowy
+
+  }
   namespace Żywe {
     class Czosnek
     class Imbir
@@ -314,6 +360,10 @@ namespace Przyprawy #purple {
     class OcetWinny
     class OcetBalsamiczny
     class SokCytrynowy
+  }
+  namespace Grzyby {
+    class Borowiki
+    class Shitake
   }
   class Sól
   class Pieprz
@@ -362,7 +412,7 @@ namespace Danie.Zupa {
 ' Danie.Zupa-Half-Prod =========================================
 Warzywa.Obróbka.Włoszczyzna      -r-> Danie.Zupa.Półprodukt.Bulion : 1x >
 Przyprawy.Sól                    -r-> Danie.Zupa.Półprodukt.Bulion
-Warzywa.Kiszonki.OgórkiKiszone   -r-> Danie.Zupa.Półprodukt.OgórkiSmazone
+Przetwory.Kiszone.OgórkiKiszone   -r-> Danie.Zupa.Półprodukt.OgórkiSmazone
 Tłuszcze.Masło                   -r-> Danie.Zupa.Półprodukt.OgórkiSmazone
 
 Nagłówek.Utensils.Garnek -[dotted]-> Danie.Zupa.Półprodukt.Bulion
@@ -382,7 +432,7 @@ Danie.Zupa.Półprodukt.Bulion -r-> Danie.Zupa.Ogórkowa
 Danie.Zupa.Półprodukt.OgórkiSmazone -r-> Danie.Zupa.Ogórkowa
 'Pozostałe
 Danie.Zupa.Półprodukt.Bulion -r-> Danie.Zupa.Krupnik
-Węglowodany.KaszaJęczmienna -r-> Danie.Zupa.Krupnik
+Węglowodany.Kasza.Jęczmienna -r-> Danie.Zupa.Krupnik
 'Jarzynowa
 Danie.Zupa.Półprodukt.Bulion -r-> Danie.Zupa.Jarzynowa
 Węglowodany.Ziemniaki  -r-> Danie.Zupa.Jarzynowa
@@ -404,7 +454,7 @@ namespace Danie.Śniadanie {
 }
 
 'Owianka5p
-Węglowodany.KaszaOwsiana -r-> Danie.Śniadanie.Owsianka5p
+Węglowodany.Kasza.Owsiana -r-> Danie.Śniadanie.Owsianka5p
 Owoce.Jabłka             -r-> Danie.Śniadanie.Owsianka5p
 Owoce.Banany             -r-> Danie.Śniadanie.Owsianka5p
 Owoce.Suszone.Rodzynki   -r-> Danie.Śniadanie.Owsianka5p
@@ -416,10 +466,10 @@ Przyprawy.Kardamon       -r-> Danie.Śniadanie.Owsianka5p
 Przyprawy.Cynamon        -r-> Danie.Śniadanie.Owsianka5p
 
 'Angielskie
-Białko.Frankfurterki     -r-> Danie.Śniadanie.Angielskie
-Węglowodany.Chleb        -r-> Danie.Śniadanie.Angielskie
-Tłuszcze.Masło           -r-> Danie.Śniadanie.Angielskie
-Warzywa.Surowe.Pomidory  -r-> Danie.Śniadanie.Angielskie
+Białko.Kiełby.Frankfurterki     -r-> Danie.Śniadanie.Angielskie
+Węglowodany.Chleb               -r-> Danie.Śniadanie.Angielskie
+Tłuszcze.Masło                  -r-> Danie.Śniadanie.Angielskie
+Warzywa.Surowe.Pomidory         -r-> Danie.Śniadanie.Angielskie
 
 'IndyjskiDal
 Warzywa.Obróbka.Cebula   -r-> Danie.Śniadanie.IndyjskiDal
@@ -437,14 +487,64 @@ namespace Danie.DrugieDanie {
       class Gołąbki
       class GulaszzPekinki
       class PadThai
+      class BurritozMarchewka
+      class QuinoaTrioWarz
+      class SałatkazTuńczykiem
+      '------------
+      class SpaghettiBolognese
+      class KotletzPiersi
+      class TortillazzKurczakiem
+      class KurczakPeczak
+      class TajskieCurry
+      class Pstrągłosoś
+      class BurgeryDomowe
+      class MakaronŚmietanSzpinak
+      class Rosół
+      class Ogórkowa
+      class WarzywawBulionie
 }
+'Schabowy
 Białko.Wieprzowina               -r-> Danie.DrugieDanie.Schabowy
-Warzywa.Kiszonki.KapustaKiszona  -r-> Danie.DrugieDanie.Schabowy
+Przetwory.Kiszone.KapustaKiszona  -r-> Danie.DrugieDanie.Schabowy
 Przyprawy.Sól                    -r-> Danie.DrugieDanie.Schabowy
 
-'Danie.DrugieDanie
+'Spaghetti
+Białko.Wołowina -r-> Danie.DrugieDanie.Spaghetti
+Przetwory.Fermentat.Wino  -r-> Danie.DrugieDanie.Spaghetti
+
+'KotletzPiersi
+Białko.Kurczak -r-> Danie.DrugieDanie.KotletzPiersi
+Przyprawy.Sosy.Pieczarkowy -r-> Danie.DrugieDanie.KotletzPiersi
+Węglowodany.Ziemniaki -r-> Danie.DrugieDanie.KotletzPiersi
+
+'Curry
+Puszki.MleczkoKokosowe -r-> Danie.DrugieDanie.TajskieCurry
+
+'Sałatkaztuńczyka
+Puszki.Tuńczyk -r-> Danie.DrugieDanie.SałatkazTuńczykiem
+Puszki.Kukurydza -r-> Danie.DrugieDanie.SałatkazTuńczykiem
+
+'Burgery
+Białko.Wołowina -r-> Danie.DrugieDanie.BurgeryDomowe
+
+'PstrągLosoś
+Białko.Ryby-r-> Danie.DrugieDanie.PstrągLosoś
+
+
+' Prod-Danie.Takeaway =========================================
+namespace Danie.ToGo {
+  class Pizza
+  class Sushi
+}
+
+
+
 ' Consumer =========================================
 class Konsument
+class Resztki
+class Mycie
+class Wyrzucanie
+
 'Danie.Zupa
 Danie.Zupa.Rosół -r-> Konsument
 Danie.Zupa.Pomidorowa -r-> Konsument
@@ -455,17 +555,23 @@ Danie.Zupa.Jarzynowa -r-> Konsument
 Danie.Zupa.Dyniowa -r-> Konsument
 Danie.Zupa.Pieczarkowa -r-> Konsument
 Danie.Zupa.Rybna            -r-> Konsument
+'Danie.Sniadanie
 Danie.Śniadanie.Owsianka5p  -r-> Konsument
 Danie.Śniadanie.Angielskie  -r-> Konsument
 Danie.Śniadanie.AmerykańskiePankejki  -r-> Konsument
 Danie.Śniadanie.IndyjskiDal  -r-> Konsument
+'Danie.Drugie
 Danie.DrugieDanie.Schabowy  -r-> Konsument
 
+Konsument -r-> Resztki
+Konsument -r-> Mycie
+Resztki -r-> Wyrzucanie
+Mycie -r-> Wyrzucanie
 '
 ' Layout =========================================
 Nagłówek.Produkty -[hidden]d- Warzywa.Obróbka
 Nagłówek.Produkty -[hidden]d- Warzywa.Surowe
-Nagłówek.Produkty -[hidden]d- Warzywa.Kiszonki
+Nagłówek.Produkty -[hidden]d- Przetwory.Kiszone
 Nagłówek.Produkty -[hidden]d- Białko
 Nagłówek.Produkty -[hidden]d- Owoce
 Nagłówek.Produkty -[hidden]d- Węglowodany
@@ -474,12 +580,12 @@ Nagłówek.Produkty -[hidden]d- Tłuszcze
 Nagłówek.Produkty -[hidden]d- Przyprawy
 
 Puszki           -[hidden]d- Warzywa.Obróbka
-Warzywa.Obróbka  -[hidden]d- Warzywa.Kiszonki
-Warzywa.Kiszonki -[hidden]d- Warzywa.Surowe 
+Warzywa.Obróbka  -[hidden]d- Przetwory.Kiszone
+Przetwory.Kiszone -[hidden]d- Warzywa.Surowe 
 Warzywa.Surowe   -[hidden]d- Owoce
 Owoce            -[hidden]d- Białko
-Białko           -[hidden]d- Nabiał
-Nabiał           -[hidden]d- Tłuszcze
+Białko           -[hidden]d- Białko.Nabiał
+Białko.Nabiał    -[hidden]d- Tłuszcze
 Tłuszcze         -[hidden]d- Węglowodany
 Węglowodany      -[hidden]d- Mąki
 Mąki             -[hidden]d- Przyprawy
